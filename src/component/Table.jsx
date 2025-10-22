@@ -34,7 +34,7 @@ function Table() {
             <thead>
                 <tr>{tableHeading.map((data, index) => {
                     return(
-                        <td key={index} className="p-2 bg-gray-300 border border-gray-400">{data.icon}{data.name}</td>
+                        <td key={index} className="p-2 bg-gray-300 border border-gray-400 text-center">{data.icon}{data.name}</td>
                     )
                 })}</tr>
             </thead>
