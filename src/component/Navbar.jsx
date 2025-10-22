@@ -40,8 +40,8 @@ function Navbar() {
             <FaBars className="flex sm:hidden" onClick={() => setmenu(true)}></FaBars>
         </div>
         {<div className="bg-gray-900 fixed top-0 w-1/2 h-screen z-10 p-10 transition-all ease-in-out duration-1000" style={{right : menu ? "0%" : "-50%"}}>
-            <div className="flex justify-end w-full hover:text-red-500">
-                <FaXmark onClick={() => setmenu(false)}></FaXmark>
+            <div className="flex justify-end w-full ">
+                <FaXmark class name="hover:text-red-500" onClick={() => setmenu(false)}></FaXmark>
             </div>
             <ul>
                 {navList.map((data, index) => {
